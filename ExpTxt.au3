@@ -77,21 +77,7 @@ $ExpandedText[6] = "Thanks,+{ENTER}Sathya Sivam"
 $ExpandedText[7] = "Office 365 Excel "
 $ExpandedText[8] = "Excel 2016 vba "
 $ExpandedText[9] = "SharePoint "
-$ExpandedText[10] = "DQMF "
-$ExpandedText[11] = "SGNPC0JHGH7"
-$ExpandedText[12] = "Good Morning Vinod "
-$ExpandedText[13] = "P&L "
-$ExpandedText[14] = "Risk & Finance "
-$ExpandedText[15] = "CRM / CDE "
-$ExpandedText[17] = "SG-SIN-CBP1-L"
-$ExpandedText[18] = "Templates 001 & 002"
-$ExpandedText[19] = "Hope this clarifies.  Let me know if you want to discuss this further."
-$ExpandedText[20] = "DQMF rollout "
-$ExpandedText[21] = "Conference Code: 16090260 #"
-$ExpandedText[22] = "IFRS9 "
-$ExpandedText[24] = "BCRS-IFRS9 "
-$ExpandedText[25] = "FINETL / eGLEX "
-$ExpandedText[26] = " supersedes this."
+
 
 _HotStringSet("hgm","ExpandText",1)
 _HotStringSet("btw", "ExpandText",2)
@@ -102,23 +88,7 @@ _HotStringSet("tks", "ExpandText",6)
 _HotStringSet("xll", "ExpandText",7)
 _HotStringSet("xlv", "ExpandText",8)
 _HotStringSet("spp", "ExpandText",9)
-_HotStringSet("dqmff", "ExpandText",10)
-_HotStringSet("sgpp", "ExpandText",11)
-_HotStringSet("gmvv", "ExpandText",12)
-_HotStringSet("pnl", "ExpandText",13)
-_HotStringSet("rnf", "ExpandText",14)
-_HotStringSet("ccde", "ExpandText",15)
-_HotStringSet("ssa", "ExpandText",16)
-_HotStringSet("aaa", "ExpandText",17)
-_HotStringSet("temp12", "ExpandText",18)
-_HotStringSet("hcfd", "ExpandText",19)
-_HotStringSet("dqmfr", "ExpandText",20)
-_HotStringSet("cncd", "ExpandText",21)
-_HotStringSet("i9", "ExpandText",22)
-_HotStringSet("pln", "ExpandText",23)
-_HotStringSet("bcif", "ExpandText",24)
-_HotStringSet("fegl", "ExpandText",25)
-_HotStringSet("sstt", "ExpandText",26)
+
 
 While 1
     Sleep(10)
@@ -132,7 +102,7 @@ Func ExpandText($ArgIndx)
 		Case 16
 			Send("1568925{TAB}")
 		Case 23
-			Send("1568925{TAB}time2Change={ENTER}")
+			Send("1568925{TAB}:){ENTER}")
 		Case Else
 			Send($ExpandedText[$ArgIndx])
 	EndSwitch
